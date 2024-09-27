@@ -15,7 +15,7 @@ The **Attendance Tracker** is a web-based tool designed to track attendance for 
 ## Live Demo
 👉 [Try the Attendance Tracker](https://sokandesujal.github.io/Attendance-Tracker/)
 
-![Attendance Tracker Screenshot](path-to-screenshot.png)  
+![Attendance Tracker Screenshot](timetable6-1.png)  
 *A sample screenshot of the Attendance Tracker interface.*
 
 ## How to Use
