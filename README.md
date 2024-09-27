@@ -1,6 +1,3 @@
-Here is a proper Markdown format for your **Attendance Tracker** project's `README.md` file:
-
-```markdown
 # Attendance Tracker
 
 ![Attendance Tracker](https://img.shields.io/badge/status-active-brightgreen.svg)
