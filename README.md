@@ -3,23 +3,25 @@
 ![Attendance Tracker](https://img.shields.io/badge/status-active-brightgreen.svg)
 
 ## Overview
-The **Attendance Tracker** is a web-based tool designed to track attendance for different subjects, calculate overall attendance percentages, and determine eligibility for exams. The tool features a dark mode and allows users to export attendance results to PDF. It also visualizes attendance percentages using bar charts.
+The **Attendance Tracker** is a web-based tool designed to track attendance for various subjects, calculate overall attendance percentages, and determine exam eligibility. The tool features a dark mode, bar chart visualizations, and the ability to export attendance results to PDF.
 
 ## Features
 - **Subject-wise Attendance Input:** Enter subject names and corresponding attendance data.
-- **Eligibility Check:** Automatically calculates whether you are eligible for exams based on the 80% attendance rule.
-- **Visual Representation:** Displays attendance in bar charts using [Chart.js](https://www.chartjs.org/).
+- **Eligibility Check:** Automatically checks eligibility based on the 80% attendance rule.
+- **Visual Representation:** Displays attendance percentages using [Chart.js](https://www.chartjs.org/).
 - **Export to PDF:** Generate a PDF report of your attendance data using [jsPDF](https://github.com/parallax/jsPDF).
 - **Dark Mode:** Toggle between light and dark themes for better accessibility.
 
-## Demo
+## Live Demo
+👉 [Try the Attendance Tracker](https://sokandesujal.github.io/Attendance-Tracker/)
+
 ![Attendance Tracker Screenshot](path-to-screenshot.png)  
-_A sample screenshot of the Attendance Tracker interface._
+*A sample screenshot of the Attendance Tracker interface.*
 
 ## How to Use
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/your-username/Attendance-Tracker.git
+git clone https://github.com/sokandesujal/Attendance-Tracker.git
 ```
 
 ### Step 2: Open the Project
@@ -35,7 +37,7 @@ git clone https://github.com/your-username/Attendance-Tracker.git
     ```
   
 ### Step 4: Calculate Attendance
-- Click the **Calculate** button to view the overall and subject-wise results.
+- Click the **Calculate** button to view overall and subject-wise results.
 
 ### Step 5: View Results
 - The tool will display:
@@ -47,16 +49,16 @@ git clone https://github.com/your-username/Attendance-Tracker.git
 - Click the **Export to PDF** button to generate and download a report of the attendance data.
 
 ## Code Structure
-- **HTML:** Structure of the webpage is defined in `index.html`.
-- **CSS:** Styling for the webpage is in `styles.css`. It supports both light and dark modes.
-- **JavaScript:** Logic for calculations, chart updates, and PDF generation is in `script.js`.
+- **HTML**: Structure of the webpage is defined in `index.html`.
+- **CSS**: Styling for the webpage is in `styles.css`. It supports both light and dark modes.
+- **JavaScript**: Logic for calculations, chart updates, and PDF generation is in `script.js`.
 
 ## Technologies Used
-- **HTML5** for structure
-- **CSS3** for styling
-- **JavaScript (Vanilla)** for interactive features
-- **Chart.js** for visualizing attendance data
-- **jsPDF** for exporting data to PDF
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) HTML5 for structure
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) CSS3 for styling
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) JavaScript (Vanilla) for interactive features
+- ![Chart.js](https://img.shields.io/badge/Chart.js-F5D03A?style=flat-square&logo=chart.js&logoColor=black) for visualizing attendance data
+- ![jsPDF](https://img.shields.io/badge/jsPDF-FFB300?style=flat-square&logo=javascript&logoColor=black) for exporting data to PDF
 
 ## Project Files
 ```bash
@@ -84,7 +86,7 @@ For any inquiries or feedback, please contact me at [your-email@example.com].
 ```
 
 ### Tips:
-- Replace `path-to-screenshot.png` with an actual screenshot of your application.
-- Customize the GitHub repository link, email address, and badge URLs as needed.
+- Replace `path-to-screenshot.png` with the actual path to your screenshot.
+- Customize the email address and any other links as necessary.
 
-This README follows good practices and provides all the necessary details for users and developers to understand and use your project effectively.
+This format makes the README visually appealing while maintaining clarity and functionality.
