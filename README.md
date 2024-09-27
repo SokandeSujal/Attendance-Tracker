@@ -82,11 +82,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For any inquiries or feedback, please contact me at [your-email@example.com].
+For any inquiries or feedback, please contact me at [sokandesujal@gmail.com].
 ```
-
-### Tips:
-- Replace `path-to-screenshot.png` with the actual path to your screenshot.
-- Customize the email address and any other links as necessary.
-
-This format makes the README visually appealing while maintaining clarity and functionality.
