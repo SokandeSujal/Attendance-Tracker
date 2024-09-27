@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance Tracker</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- External Libraries -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <button class="dark-mode-toggle" id="darkModeToggle">🌓</button>
+    <div class="container">
+      <h1 style="text-align: center">Attendance Tracker</h1>
+
+      <!-- Attendance Tracker -->
+      <textarea
+        id="attendanceInput"
+        placeholder="Enter subject and attendance data e.g., &#10;Data Analytics&#10;46/52&#10;Project Planning&#10;19/19"
+      ></textarea>
+      <button id="calculateButton">Calculate</button>
+      <button id="exportButton" style="background-color: #28a745">
+        Export to PDF
+      </button>
+      <div id="overallResults" class="results"></div>
+      <div id="subjectResults" class="results"></div>
+      <div id="graphContainer">
+        <canvas id="attendanceChart"></canvas>
+      </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: 20px">
+      <p>Made by Sujal Sokande</p>
+    </footer>
+  </body>
+</html>
