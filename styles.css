@@ -1,168 +1,170 @@
 :root {
-    --bg-color: #f4f4f4;
-    --text-color: #333;
-    --primary-color: #007bff;
-    --secondary-color: #e9ecef;
-    --eligible-color: #28a745;
-    --not-eligible-color: #dc3545;
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 20px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --primary-color: #007bff;
+  --secondary-color: #e9ecef;
+  --eligible-color: #28a745;
+  --not-eligible-color: #dc3545;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: 150px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.1s;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.results {
+  margin-top: 20px;
+  padding-top: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.results.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: var(--secondary-color);
+  margin: 5px 0;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+li:hover {
+  transform: translateX(5px);
+}
+
+.eligible {
+  color: var(--eligible-color);
+  font-weight: bold;
+}
+
+.not-eligible {
+  color: var(--not-eligible-color);
+  font-weight: bold;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.dark-mode {
+  --bg-color: #333;
+  --text-color: #f4f4f4;
+  --secondary-color: #4a4a4a;
+}
+
+.dark-mode .container {
+  background: #2a2a2a;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode textarea {
+  background-color: #4a4a4a;
+  color: #f4f4f4;
+  border-color: #666;
+}
+
+#graphContainer {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
   .container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
-  }
-  
-  h1,
-  h2,
-  h3 {
-    color: var(--primary-color);
-  }
-  
-  textarea {
-    width: 100%;
-    height: 150px;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    resize: none;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  }
-  
-  button {
-    width: 100%;
-    padding: 12px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.1s;
-    margin-bottom: 10px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  button:active {
-    transform: scale(0.98);
-  }
-  
-  .results {
-    margin-top: 20px;
-    padding-top: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  .results.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    background: var(--secondary-color);
-    margin: 5px 0;
-    padding: 12px;
-    border-radius: 8px;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  li:hover {
-    transform: translateX(5px);
-  }
-  
-  .eligible {
-    color: var(--eligible-color);
-    font-weight: bold;
-  }
-  
-  .not-eligible {
-    color: var(--not-eligible-color);
-    font-weight: bold;
-  }
-  
-  .dark-mode-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    z-index: 1000;
-  }
-  
-  .dark-mode {
-    --bg-color: #333;
-    --text-color: #f4f4f4;
-    --secondary-color: #4a4a4a;
-  }
-  
-  .dark-mode .container {
-    background: #2a2a2a;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-  }
-  
-  .dark-mode textarea {
-    background-color: #4a4a4a;
-    color: #f4f4f4;
-    border-color: #666;
-  }
-  
-  #graphContainer {
-    margin-top: 20px;
-  }
-  
-  @media (max-width: 600px) {
-    .container {
       padding: 15px;
-    }
-    h1 {
+  }
+
+  h1 {
       font-size: 24px;
-    }
-    textarea,
-    button {
+  }
+
+  textarea, button {
       font-size: 14px;
-    }
-    p,
-    ul {
+      width: 100%;
+  }
+
+  p, ul {
       font-size: 16px;
-    }
-    .dark-mode-toggle {
+  }
+
+  .dark-mode-toggle {
       bottom: 10px;
       right: 10px;
       width: 40px;
       height: 40px;
       font-size: 20px;
-    }
   }
-  
+}
